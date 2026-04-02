@@ -4,9 +4,10 @@
             <div class="uk-grid uk-grid-collapse uk-flex-middle">
                 <!-- Desktop View -->
                 <div class="uk-width-large-1-4 uk-visible-large">
-                    {{-- <div class="hp-logo">
-                        <a href="/">Sơn Cửa</a>
-                    </div> --}}
+                    <div class="hp-logo">
+                        <a href="/"
+                            style="text-transform: uppercase; font-size: 16px;">SONCUAGOCUASATCUHANOI.COM</a>
+                    </div>
                 </div>
 
                 <div class="uk-width-large-2-4 uk-visible-large">
@@ -35,11 +36,10 @@
 
                 <!-- Mobile View -->
                 <div class="uk-width-1-1 uk-hidden-large">
-                    <div class="hp-mobile-header uk-flex uk-flex-middle uk-flex-between">
+                    <div class="hp-mobile-header uk-flex uk-flex-middle" style="justify-content: space-between; width: 100%;">
                         <div class="hp-logo">
-                            {{-- <a href="/"
-                                style="font-family: var(--font-heading); font-size: 20px; font-weight: 700; color: var(--color-primary); text-decoration: none;">Sơn
-                                Cửa</a> --}}
+                            <a href="/"
+                                style="font-family: var(--font-heading); font-size: 12px; font-weight: 500; color: var(--color-primary); text-decoration: none;">SONCUAGOCUASATCUHANOI.COM</a>
                         </div>
 
                         <div class="hp-mobile-nav uk-flex uk-flex-middle">

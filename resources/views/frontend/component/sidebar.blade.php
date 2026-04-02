@@ -67,10 +67,10 @@
         </a>
 
         <div class="hp-offcanvas-logo" style="margin-bottom: 30px;">
-            {{-- <a href="/"
-                style="font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: var(--color-primary); text-decoration: none;">
-                Sơn Cửa
-            </a> --}}
+            <a href="/"
+                style="font-family: var(--font-heading); font-size: 12px; font-weight: 500; color: var(--color-primary); text-decoration: none;">
+                SONCUAGOCUASATCUHANOI.COM
+            </a>
         </div>
 
         <nav class="hp-offcanvas-nav uk-margin-large-bottom">
