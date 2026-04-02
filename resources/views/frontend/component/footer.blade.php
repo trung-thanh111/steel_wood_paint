@@ -14,6 +14,16 @@
                         style="max-width: 500px; margin-bottom: 20px; opacity: 0.8; line-height: 1.8;">
                         {{ $system['homepage_description'] ?? 'Dịch vụ sơn cửa gỗ, cửa sắt chuyên nghiệp. Chúng tôi cam kết mang lại chất lượng dịch vụ cao nhất, màu sơn bền đẹp và quy trình làm việc minh bạch cho mọi công trình.' }}
                     </p>
+                    <p>Sơn cửa gỗ, cửa sắt cũ Hà Đông</p>
+                    <p>Sơn cửa gỗ, cửa sắt cũ Hoàng Mai</p>
+                    <p>Sơn cửa gỗ, cửa sắt cũ Thanh Xuân</p>
+                    <p>Sơn cửa gỗ, cửa sắt cũ Cầu Giấy</p>
+                    <p>Sơn cửa gỗ, cửa sắt cũ Long Biên</p>
+                    <p>Sơn cửa gỗ, cửa sắt cũ Ba Đình</p>
+                    <p>Sơn cửa gỗ, cửa sắt cũ Đống Đa</p>
+                    <p>Sơn cửa gỗ, cửa sắt cũ Hai Bà Trưng</p>
+                    <p>Sơn cửa gỗ, cửa sắt cũ Hoàn Kiếm</p>
+                    <p>Sơn cửa gỗ, cửa sắt cũ Tây Hồ</p>
                     <div class="hp-footer-contact-item uk-flex uk-flex-middle hp-gap-15" style="margin-bottom: 30px;">
                         <i class="fa fa-phone" style="color: var(--color-primary); font-size: 20px; width: 20px;"></i>
                         <span
@@ -32,7 +42,7 @@
                         @csrf
                         {{-- Hidden field to support legacy property requirement if necessary --}}
                         <input type="hidden" name="property_id" value="1">
-                        
+
                         <div class="uk-grid uk-grid-small">
                             <div class="uk-width-large-1-2 uk-width-medium-1-1 uk-margin-bottom">
                                 <input type="text" name="full_name" placeholder="Họ và tên *" required

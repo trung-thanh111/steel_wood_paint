@@ -2,7 +2,8 @@
 @section('content')
     <!-- Section: Home (Hero) -->
     <section id="home" class="hp-hero">
-        <div class="hp-hero-slide" style="background-image: url('{{ asset('frontend/resources/img/landing/hero.png') }}')">
+        <div class="hp-hero-slide"
+            style="background-image: url('{{ asset('frontend/resources/img/landing/banner_cua.png') }}')">
             <div class="hp-hero-overlay"></div>
             <div class="uk-container uk-container-center hp-hero-content">
                 <h1 class="hp-hero-title animated fadeInUp">
