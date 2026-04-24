@@ -4,30 +4,70 @@
             <div class="uk-width-large-1-2 uk-width-medium-1-1"
                 data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:100}">
                 <div class="hp-footer-info-wrap">
-                    <div class="hp-footer-logo" style="margin-bottom: 25px;">
-                        <a href="/"
-                            style="font-family: var(--font-heading); font-size: 28px; font-weight: 700; color: var(--color-white); text-decoration: none; letter-spacing: 2px; text-transform: uppercase;">
-                            Sơn cửa chuyên nghiệp
-                        </a>
+                    <!-- Chính sách Section -->
+                    <div class="footer-policy-section" style="margin-bottom: 40px;">
+                        <div class="uk-flex uk-flex-middle uk-margin-bottom">
+                            <div class="policy-icon"
+                                style="width: 45px; height: 45px; background: #cc0000; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                                <i class="fa fa-check" style="color: #000; font-size: 24px; font-weight: 900;"></i>
+                            </div>
+                            <h3 style="color: #fff; margin: 0; font-size: 28px; font-weight: 700;">Chính sách</h3>
+                        </div>
+                        <div style="color: #fff; line-height: 1.8; font-size: 16px;">
+                            {!! $system['contact_policy'] ??
+                                '<ul style="list-style: none; padding: 0;"><li>Chỉ 30 phút chúng tôi sẽ có mặt, khảo sát và tư vấn miễn phí cho khách hàng</li><li>Cam kết phục vụ 24/24 không kể thứ 7, chủ nhật, hay ngày lễ</li><li>Tư vấn, báo giá miễn phí.</li></ul>' !!}
+                        </div>
                     </div>
-                    <p class="hp-footer-desc"
-                        style="max-width: 500px; margin-bottom: 20px; opacity: 0.8; line-height: 1.8;">
-                        {{ $system['homepage_description'] ?? 'Dịch vụ sơn cửa gỗ, cửa sắt chuyên nghiệp. Chúng tôi cam kết mang lại chất lượng dịch vụ cao nhất, màu sơn bền đẹp và quy trình làm việc minh bạch cho mọi công trình.' }}
-                    </p>
-                    <p>Sơn cửa gỗ, cửa sắt cũ Hà Đông</p>
-                    <p>Sơn cửa gỗ, cửa sắt cũ Hoàng Mai</p>
-                    <p>Sơn cửa gỗ, cửa sắt cũ Thanh Xuân</p>
-                    <p>Sơn cửa gỗ, cửa sắt cũ Cầu Giấy</p>
-                    <p>Sơn cửa gỗ, cửa sắt cũ Long Biên</p>
-                    <p>Sơn cửa gỗ, cửa sắt cũ Ba Đình</p>
-                    <p>Sơn cửa gỗ, cửa sắt cũ Đống Đa</p>
-                    <p>Sơn cửa gỗ, cửa sắt cũ Hai Bà Trưng</p>
-                    <p>Sơn cửa gỗ, cửa sắt cũ Hoàn Kiếm</p>
-                    <p>Sơn cửa gỗ, cửa sắt cũ Tây Hồ</p>
-                    <div class="hp-footer-contact-item uk-flex uk-flex-middle hp-gap-15" style="margin-bottom: 30px;">
-                        <i class="fa fa-phone" style="color: var(--color-primary); font-size: 20px; width: 20px;"></i>
-                        <span
-                            style="opacity: 0.9; font-weight: 700; font-size: 18px; color: var(--color-white);">{{ $system['contact_hotline'] ?? '09XX XXX XXX' }}</span>
+
+                    <!-- VỀ CHÚNG TÔI Section -->
+                    <div class="footer-about-section" style="margin-bottom: 40px;">
+                        <h3
+                            style="color: #fff; font-size: 24px; font-weight: 700; margin-bottom: 20px; text-transform: uppercase;">
+                            VỀ CHÚNG TÔI</h3>
+                        <p style="color: #fff; line-height: 1.6; margin-bottom: 25px; font-size: 16px;">
+                            {{ $system['about_description'] ?? 'Chuyên thi công sơn cửa gỗ, sơn cửa sắt, thợ sơn dầu, sơn Pu, thợ phun sơn đồ gỗ cũ tại Hà Nội. Nhận sơn sửa cửa gỗ, sơn cửa sắt giả gỗ, sơn bàn ghế, tủ bếp, tủ quần áo, giường, đồ gỗ mỹ nghệ cao cấp, chuyển đổi màu sơn theo yêu cầu khách hàng.' }}
+                        </p>
+
+                        <div class="branch-list" style="color: #fff; line-height: 1.8; font-size: 16px;">
+                            @php
+                                $branches = [
+                                    ['name' => 'Cơ sở 1', 'addr' => 'Định Công - Quận Hoàng Mai - HN'],
+                                    ['name' => 'Cơ sở 2', 'addr' => 'Quận Cầu Giấy - HN'],
+                                    ['name' => 'Cơ sở 3', 'addr' => 'Quận Ba Đình - HN'],
+                                    ['name' => 'Cơ sở 4', 'addr' => 'Quận Đống Đa - HN'],
+                                    ['name' => 'Cơ sở 5', 'addr' => 'Quận Tây Hồ - HN'],
+                                    ['name' => 'Cơ sở 6', 'addr' => 'Quận Hà Đông - HN'],
+                                    ['name' => 'Cơ sở 7', 'addr' => 'Quận Thanh Xuân - HN'],
+                                    ['name' => 'Cơ sở 8', 'addr' => 'Quận Long Biên - HN'],
+                                ];
+                            @endphp
+                            <ul style="list-style: none; padding: 0;">
+                                @foreach($branches as $branch)
+                                <li style="margin-bottom: 12px; display: flex; align-items: baseline;">
+                                    <i class="fa fa-chevron-right" style="color: #ff9800; font-size: 12px; margin-right: 15px;"></i>
+                                    <span style="color: #fff; font-weight: 700; font-size: 16px;">{{ $branch['name'] }}: <span style="color: #ff9800; font-weight: 400;">{{ $branch['addr'] }}</span></span>
+                                </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- LIÊN HỆ Section -->
+                    <div class="footer-contact-info-section">
+                        <h3
+                            style="color: #fff; font-size: 24px; font-weight: 700; margin-bottom: 20px; text-transform: uppercase;">
+                            LIÊN HỆ VỚI CHÚNG TÔI</h3>
+                        <div style="color: #fff; line-height: 2.2; font-size: 16px;">
+                            <div style="font-weight: 700;">Website: <span
+                                    style="color: #ff9800; font-weight: 400;">{{ $system['contact_website'] ?? 'http://www.sonsuacuagodosat.com' }}</span>
+                            </div>
+                            <div style="font-weight: 700;">Hotline: <span
+                                    style="color: #ff9800; font-weight: 400;">{{ $system['contact_hotline'] ?? '0913 358 593' }}</span>
+                            </div>
+                            <div style="font-weight: 700;">Email: <span
+                                    style="color: #ff9800; font-weight: 400;">{{ $system['contact_email'] ?? 'nvphongsonsuacua@gmail.com' }}</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

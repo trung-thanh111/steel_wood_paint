@@ -59,6 +59,7 @@ class System{
                 'fax' => ['type' => 'text', 'label' => 'Fax'],
                 'email' => ['type' => 'text', 'label' => 'Email'],
                 'website' => ['type' => 'text', 'label' => 'Website'],
+                'policy' => ['type' => 'editor', 'label' => 'Chính sách'],
                 'map' => [
                     'type' => 'textarea', 
                     'label' => 'Bản đồ', 
@@ -104,6 +105,15 @@ class System{
 
         
         
+        $data['about'] = [
+            'label' => 'Thông tin Về chúng tôi',
+            'description' => 'Cài đặt thông tin giới thiệu và danh sách chi nhánh hiển thị ở Footer',
+            'value' => [
+                'description' => ['type' => 'textarea', 'label' => 'Mô tả ngắn'],
+                'branches' => ['type' => 'editor', 'label' => 'Danh sách chi nhánh'],
+            ]
+        ];
+
         $data['script'] = [
             'label' => 'Cấu hình script',
             'description' => '',
